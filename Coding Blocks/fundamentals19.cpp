@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int main(int argc, char const *argv[])
+{
+	int n;
+	cin>>n;
+
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= i; j++)
+		{
+			if(i%2==0&&i!=2){
+				int k =i-2;
+                cout<<"1";
+                  while(k--){
+                  	cout<<"0";
+                  }
+                cout<<"1"<<endl;
+                break;
+			}
+			
+				cout<<"1";
+			
+		}
+        if(i%2==0&&i!=2){
+            continue;
+        }
+        cout<<endl;
+	}
+	return 0;
+}
