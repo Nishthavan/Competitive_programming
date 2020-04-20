@@ -7,9 +7,8 @@ void checkandupdate(char *s,int n){
 		  return;
 	  }
       if(s[n]==s[n+1]){
-      	int i;
-      	     for(i=strlen(s);i>n;i--){
-                 s[i] = s[i-1]; 
+      	     for(int i=strlen(s);i>n;i--){
+                 s[i] = s[i-1];
       	     }
       s[n+1] = '*';
       }

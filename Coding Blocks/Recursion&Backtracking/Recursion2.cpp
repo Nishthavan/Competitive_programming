@@ -3,7 +3,7 @@
 using namespace std;
 
 void checkandupdate(char *s){
-  
+
       if(s[0]=='\0'){
       return;
        }
@@ -13,7 +13,7 @@ void checkandupdate(char *s){
           while(s[i]!='\0'){
           s[i] = s[i+1];
           i++;
-        }
+          }
           checkandupdate(s);
       }
       checkandupdate(s+1);
